@@ -44,7 +44,7 @@ En esta vista debes llevar a cabo lo siguiente:
 
 + Al presionar el link de **recuperar contraseña** se debe mostrar un `alert` con el mensaje: "recuperar contraseña".
 
-+ El campo **tipo** debe ser un [`dropdown`](http://getbootstrap.com/javascript/#dropdowns) de Bootstrap cuyo valor por defecto debe ser "**Seleccione**" y las opciones serán "**V**", "**E**" y "**P**".
++ El campo **tipo** debe ser un [`dropdown`](http://getbootstrap.com/javascript/#dropdowns) cuyo valor por defecto debe ser "**Seleccione**" y las opciones serán "**V**", "**E**" y "**P**".
 
 ### POST `Login`
 
