@@ -117,4 +117,4 @@ Por otro lado, en caso de que ocurra un error, el servicio responderá un `Statu
 
 ###¡Finalmente!
 
-Al terminar el servicio, es necesario que borres la carpeta `node_modules` generada al instalar localmente las dependencias que consideraste necesarias. Que verifiques que las dependencias y sus versiones se guardaron en el archivo `package.json`. Y finalmente, que almacenes tu código en el `branch` que creaste con tu nombre y apellido. Para ello, agrega los cambios, haz `commit` y luego haz `push`.
+Almacena tu código en el `branch` que creaste con tu nombre y apellido. Para ello, agrega los cambios, haz `commit` y luego haz `push`.
