@@ -18,7 +18,7 @@ Tu tarea es realizar el `Front-End` de una aplicación web con el enfoque [`SPA`
 
 + Agregala a tu cuenta de GitHub.
 
-+ Usa la consola de GIT para clonar el repositorio con el siguiente comando git clone vía SSH.
++ Usa la consola de GIT para clonar vía SSH el repositorio con el comando `git clone`.
 
 + Crea tu `branch` siguiendo este formato `admision/nombre-apellido`. Para hacerlo, debes ejecutar el siguiente comando en la consola GIT `git checkout -b admision/nombre-apellido`.
 
