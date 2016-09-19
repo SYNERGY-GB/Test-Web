@@ -26,7 +26,13 @@ Particularmente, el `Front-End` estará basado en dos vistas las cuales serán e
 
 ## Refrescado automatizado del `browser`
 
-En este punto, es necesario que utilices las herramientas [`gulp`](http://gulpjs.com/) o [`grunt`](http://gruntjs.com/) para que al editar y guardar los cambios en tus archivos `HTML`, `CSS` o `JavaScript` el `browser` refresque las vistas automáticamente sin que debas hacerlo manualmente presionando `F5`.
+En este punto, es necesario que utilices la herramienta [`grunt`](http://gruntjs.com/) para que al editar y guardar los cambios en tus archivos `HTML`, `CSS` o `JavaScript` el `browser` refresque las vistas automáticamente sin que debas hacerlo manualmente presionando `F5`. Para ello, debes hacer los siguientes pasos :
+
++ Instala la interfaz de comandos de `grunt` con el comando `npm install -g grunt-cli`.
++ Instala las dependiencias con `npm install`.
++ Ejecuta `grunt` con el comando `grunt -v`.
+
+En este punto, deberías ver como se refresca automaticamente el archivo `index.html` al editarlo. Es importante que no borres la línea `<script src="//localhost:35729/livereload.js"></script>`.
 
 ## Vista del `login`
 
@@ -48,7 +54,7 @@ En esta vista debes llevar a cabo lo siguiente:
 
 ### POST `Login`
 
-Debes consumir el servicio web `session` para crear una sesión en el servidor. Para ello, debes hacer una petición HTTP usando el verbo `POST` al siguiente URL `http://admision.synergy-gb.com:9998/session`. 
+Debes consumir el servicio web `session` para crear una sesión en el servidor. Para ello, debes hacer una petición HTTP usando el verbo `POST` al siguiente URL `https://prueba-admision-web.herokuapp.com/session`.
 
 De la interfaz maquetada previamente junto con su lógica se deben suministrar las siguientes credenciales:
 
@@ -56,7 +62,7 @@ De la interfaz maquetada previamente junto con su lógica se deben suministrar l
 + Contraseña: synergy123
 + Tipo: V
 
-Consecuentemente, se deben enviar en el `body` de la petición en formato JSON como se muestra a continuación: 
+Consecuentemente, se deben enviar en el `body` de la petición en formato JSON como se muestra a continuación:
 
 ```json
 {
@@ -92,17 +98,24 @@ El maquetado de esta vista se deja a tu creatividad aprovechando las bondades de
 
 ### GET `data`
 
-Debes consumir el servicio web `data` obtener los datos del usuario del servidor. Para ello, debes hacer una petición HTTP usando el verbo `GET` al siguiente URL `http://admision.synergy-gb.com:9998/data` enviando por parámetros del `query string` el `cookie id` obtenido al iniciar sesión previamente. A forma de ejemplo, el URL para solicitar los datos debe ser de esta manera `http://admision.synergy-gb.com:9998/data?cid=k6lj87hj8`.
+Debes consumir el servicio web `data` obtener los datos del usuario del servidor. Para ello, debes hacer una petición HTTP usando el verbo `GET` al siguiente URL `https://prueba-admision-web.herokuapp.com/data` enviando por parámetros del `query string` el `cookie id` obtenido al iniciar sesión previamente. A forma de ejemplo, el URL para solicitar los datos debe ser de esta manera `https://prueba-admision-web.herokuapp.com/data?cid=2kj34h345`.
 
 El JSON que vas a obtener como los datos de usuario tendrá una estructura similar a la siguiente:
 
 ```json
 [
-    {
-        "id": 1,
-        "name": "Chevy del 93'",
-        "description": "Un carro con un valor sentimental gigante y muy bonito..."
-    }
+  {
+    "id": 1,
+    "title": "accusamus beatae ad facilis cum similique qui sunt",
+    "url": "http://placehold.it/600/92c952",
+    "thumbnailUrl": "http://placehold.it/150/30ac17"
+  },
+  {
+    "id": 2,
+    "title": "reprehenderit est deserunt velit ipsam",
+    "url": "http://placehold.it/600/771796",
+    "thumbnailUrl": "http://placehold.it/150/dff9f6"
+  }
 ]
 
 ```

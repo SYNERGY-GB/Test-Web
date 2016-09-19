@@ -1,0 +1,24 @@
+{
+  "name": "test-web",
+  "version": "1.0.0",
+  "description": "Esta prueba está diseñada para medir tus destrezas en el área de la programación web. Para resolverla debes tener en cuenta que debes usar las siguientes tecnologías:",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SYNERGY-GB/Test-Web.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SYNERGY-GB/Test-Web/issues"
+  },
+  "homepage": "https://github.com/SYNERGY-GB/Test-Web#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}
