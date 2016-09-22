@@ -27,13 +27,9 @@ module.exports = function(grunt) {
         'src/*.html',
         'src/**/*.html',
         'gruntfile.js'
-      ],
-      tasks: [
-
       ]
     }
   });
-
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.registerTask('default', ['connect', 'watch']);
