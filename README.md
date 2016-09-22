@@ -32,7 +32,7 @@ En este punto, es necesario que utilices la herramienta [`grunt`](http://gruntjs
 + Instala las dependiencias con `npm install`.
 + Ejecuta `grunt` con el comando `grunt -v`.
 
-En este punto, deberías ver como se refresca automaticamente el archivo `index.html` al editarlo. Es importante que no borres la línea `<script src="//localhost:35729/livereload.js"></script>`.
+En este punto, deberías ver como se refresca automaticamente el archivo `index.html` al editarlo. Es importante que **__no borres la línea__** `<script src="//localhost:35729/livereload.js"></script>`.
 
 ## Vista del `login`
 
