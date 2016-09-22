@@ -1,0 +1,27 @@
+<div ng-controller="HomeCtrl">
+	<form role="form" name="form" class="form-signin">       
+		<h3 class="form-signin-heading">Inicio de Sesión</h3>
+	  	<div class="form-group pull-right">
+		 	<select ng-model="user.type" class='form-control' required>	
+				<option value='' selected="" disabled="">Seleccione...</option>
+	            <option value='v'>V</option>
+	            <option value='e'>E</option>
+	            <option value='P'>P</option>
+	    	</select>
+	  	</div>
+	  	<div class="form-group">
+	  		<input ng-model="user.mail" type="email" id="username" class="form-control" placeholder="Usuario@gmail.com" autofocus="" required />
+			</div>
+		<div class="form-group">
+	  		<input ng-model="user.password" type="{{inputType}}" id="password" class="form-control" placeholder="Contraseña" required/>   
+  			<input type="checkbox" id="checkbox" ng-model="passwordCheckbox" ng-click="hideShowPassword()" />
+  			<label for="checkbox" ng-if="passwordCheckbox">Hide password</label>
+  			<label for="checkbox" ng-if="!passwordCheckbox">Show password</label>  		  
+	 	</div>
+	 	<div class="form-group">
+	 		<a onclick="alert('Recuperar contraseña')" href="#">¿Olvidó su contraseña?</a>
+		</div>
+	  	<button ng-click="login(user)" type="button" class="btn btn-default btn-primary center-block" ng-disabled="form.$invalid">Aceptar</button>  			
+	  	{{msgTxt}}
+	</form>
+</div>	

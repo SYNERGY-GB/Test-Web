@@ -9,7 +9,7 @@ Esta prueba está diseñada para medir tus destrezas en el área de la programac
 + JavaScript
 + Bootstrap
 + Angular.js
-+ Gulp / Grunt
++ Grunt
 + Restful Web Services
 
 Tu tarea es realizar el `Front-End` de una aplicación web con el enfoque [`SPA`](https://en.wikipedia.org/wiki/Single-page_application) usando el framework [`Angular.js`](https://angularjs.org/).  Antes de comenzar, debes hacer los siguientes pasos:
