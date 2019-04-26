@@ -1,0 +1,2 @@
+probar la funcionalidad de este dropdown
+https://www.infragistics.com/community/blogs/b/dhananjay_kumar/posts/how-to-work-with-the-bootstrap-dropdown-in-angularjs
