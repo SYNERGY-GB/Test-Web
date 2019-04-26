@@ -9,8 +9,9 @@
      <script type="text/javascript" src="../assets/js/app.js"></script>
     <script type="text/javascript" src="../assets/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
   </head>
-  <body>
+  <body class="cuerpo">
   	<div ng-controller="controlador1">
   	  {{mensaje}} 
     
@@ -27,7 +28,20 @@
               <form class="form-text" ng-submit="#" id="form">
                 <div class="form-group">
                   <div class="row">                     
-                     <!-- va un drop -->
+                    <div ng-controller="DropdownCtrl">
+    <!-- Single button -->
+    <div class="btn-group" dropdown is-open="status.isopen">
+      <button type="button" class="btn btn-primary dropdown-toggle" dropdown-toggle ng-disabled="disabled">
+        Seleccione <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" role="menu">
+        <li ng-repeat="choice in items">
+          <a href="#">{{choice}}</a>
+        </li>
+      </ul>
+    </div>
+
+</div>
                   </div>
                  </div>
                   <div class="form-group">
