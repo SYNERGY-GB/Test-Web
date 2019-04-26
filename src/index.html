@@ -3,6 +3,7 @@
   <head>
   	<meta charset="utf-8">
   	<title>Test-Web</title>
+    <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.12.1.js"></script>
     <script src="//localhost:35729/livereload.js"></script>
     <script type="text/javascript" src="./../gruntfile.js"></script>
     <script type="text/javascript" src="../assets/js/angular.min.js"></script>
@@ -17,7 +18,7 @@
     
   	</div>
 
-<header class="main">
+<div class="main-back">
   <div class="container"> 
     <div class="col-4">
         <div class="card card-login mx-lx-auto mt-5 efectrans" >
@@ -27,8 +28,8 @@
           <div class="card-body">          
               <form class="form-text" ng-submit="#" id="form">
                 <div class="form-group">
-                  <div class="row">                     
-                    <div ng-controller="DropdownCtrl">
+  <div class="row">                     
+  <div ng-controller="DropdownCtrl">
     <!-- Single button -->
     <div class="btn-group" dropdown is-open="status.isopen">
       <button type="button" class="btn btn-primary dropdown-toggle" dropdown-toggle ng-disabled="disabled">
@@ -65,7 +66,7 @@
         </div>
       </div>
     </div>
-</header>
+</div>
 
 
 
