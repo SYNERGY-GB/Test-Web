@@ -1,0 +1,29 @@
+<div class="boxlogin" ng-controller ="loginEntrada">
+     
+        <form action="/" id="loginaccess">
+
+        	<select name="users" ng-model="type">
+
+<option value="" disabled>--Seleccione--</option>
+
+<option value="V" id="V">V</option>
+
+<option value="E" id="E">E</option>
+
+<option value="P" id="P">P</option>
+
+</select><br>
+            
+    
+         <input type="text" name="user" id="user" ng-model="user" required placeholder="Usuario"><br>
+         <input type="password" name="password" id="pass" ng-model="password" required placeholder="Contraseña"><br>
+        <a href="#" ng-click="alert()"> ¿Olvido su Contraseña?</a><br>
+
+        <button type="button" ng-click="entrar()">Aceptar</button>
+
+        </form>
+
+
+
+
+</div>  

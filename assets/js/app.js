@@ -1,6 +1,9 @@
-var start = angular.module('test-web',[]);
+angular.module('test-web',[])
 
-start.controller('controlador1', function($scope){
+.controller('controlador1', function($scope){
 	$scope.mensaje = "Grunt is running! :)";
+  
+
+  
 });
 

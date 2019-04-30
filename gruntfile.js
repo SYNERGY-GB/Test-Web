@@ -12,6 +12,7 @@ module.exports = function(grunt) {
             path: '.',
             options: {
               index: 'src/index.html'
+                     //'src/http.html'
             }
           }
         }

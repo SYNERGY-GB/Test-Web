@@ -1,2 +1,3 @@
 probar la funcionalidad de este dropdown
 https://www.infragistics.com/community/blogs/b/dhananjay_kumar/posts/how-to-work-with-the-bootstrap-dropdown-in-angularjs
+https://www.tutlane.com/tutorial/angularjs/angularjs-select-box-dropdown-list-binding-with-validations-example

@@ -1,74 +1,63 @@
 <DOCTYPE html>
-<html ng-app="test-web">
+<html ng-app="myApp">
   <head>
   	<meta charset="utf-8">
   	<title>Test-Web</title>
-    <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.12.1.js"></script>
-    <script src="//localhost:35729/livereload.js"></script>
-    <script type="text/javascript" src="./../gruntfile.js"></script>
-    <script type="text/javascript" src="../assets/js/angular.min.js"></script>
-     <script type="text/javascript" src="../assets/js/app.js"></script>
-    <script type="text/javascript" src="../assets/js/bootstrap.min.js"></script>
+   
     <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
   </head>
   <body class="cuerpo">
-  	<div ng-controller="controlador1">
-  	  {{mensaje}} 
-    
+
+
+
+  	<div>
+  	    <!--<div ng-init="myFavLan=[{name:'PHP',extension:'.php'},{name:'Javascript',extension:'.js'},{name:'Python',extension:'.py'},{name:'C++',extension:'.cpp'}]"></div>
+
+        <div>
+          <p ng-repeat="cualquiercosa in myFavLan">
+            Name: {{cualquiercosa.name}}<br>
+            Extension: {{cualquiercosa.extension}}<br>
+
+          </p>
+        </div>-->
+<!--<div ng-controller="select">
+  Select your favorite language:
+<button ng-click="php()">PHP</button>
+<button ng-click="javascript()" >Javascript</button>
+<button ng-click="python()" >Python</button>
+<button ng-click="cpp()">C++</button>
+
+<p>You have Selected: {{selected}}</p>
+
+</div ng-include="'filetest.html'">
+  
+<div>
+  
+
+
+</div> --> 
+
+
+<div ng-view></div>
+
+
+
   	</div>
 
-<div class="main-back">
-  <div class="container"> 
-    <div class="col-4">
-        <div class="card card-login mx-lx-auto mt-5 efectrans" >
-          <div class="card-header">
-            <h3 class="ti">Inicion de Sesión </h3>
-          </div>
-          <div class="card-body">          
-              <form class="form-text" ng-submit="#" id="form">
-                <div class="form-group">
-  <div class="row">                     
-  <div ng-controller="DropdownCtrl">
-    <!-- Single button -->
-    <div class="btn-group" dropdown is-open="status.isopen">
-      <button type="button" class="btn btn-primary dropdown-toggle" dropdown-toggle ng-disabled="disabled">
-        Seleccione <span class="caret"></span>
-      </button>
-      <ul class="dropdown-menu" role="menu">
-        <li ng-repeat="choice in items">
-          <a href="#">{{choice}}</a>
-        </li>
-      </ul>
-    </div>
-
-</div>
-                  </div>
-                 </div>
-                  <div class="form-group">
-                    <input type="text" id="username" class="form-control" placeholder="Usuario" autofocus="autofocus" ng-model="user">
-                  </div>
-                    <div class="form-group">
-                      <input type="password" id="password" class="form-control" placeholder="Contraseña" ng-model="pass"><br>
-                      <a href="" class="link font-weight-bold"> ¿Olvido su contraseña?</a>
-                    </div>
-                    <div class="link">
-
-                    </div>
-                    <br>
-                    <div class="form-group">
-                      <!-- <button class="btn btn-primary" type="submit" value="Aceptar" id="aceptar">Aceptar</button> -->
-                      <input class="btn btn-primary" type="submit" value="Aceptar" id="aceptar">
-                    </div>
-             </form>
-          </div>
-          </div>
-        </div>
-      </div>
-    </div>
-</div>
 
 
 
+    
+    
+    <script type="text/javascript" src="../assets/js/angular.min.js"></script>
+     <script type="text/javascript" src="../assets/js/angular-route.min.js"></script>     
+     <script type="text/javascript" src="../assets/js/bootstrap.min.js"></script>
+     <script type="text/javascript" src="../assets/js/jquery-3.4.0.js"></script>
+     <!--<script type="text/javascript" src="../assets/js/app.js"></script>-->
+     <script type="text/javascript" src="./practica.js"></script>     
+     <script type="text/javascript" src="./controller.js"></script>
+     <!--<script type="text/javascript" src="//localhost:35729/livereload.js"></script>-->
+     <!--<script type="text/javascript" src="./../gruntfile.js"></script>-->
   </body>
 </html>
