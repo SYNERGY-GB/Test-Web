@@ -7,7 +7,7 @@ app.config(function($routeProvider) {
 	.when('/',{
 		//template: 'Its Doing Now'
 		templateUrl: 'login.html'
-	})
+	})	
 
 	.when('/timeline',{
 		// template: 'Welcome User Again!!!'
@@ -18,18 +18,54 @@ app.config(function($routeProvider) {
 	});
 });
 
-app.controller('loginEntrada', function($scope, $location) {
-		$scope.entrar = function() {
+app.controller('loginEntrada', function($scope,$location,$http) {
+				
+		$scope.entrar = function() {			
 			var user = $scope.user;
 			var password = $scope.password;			
 			var type= $scope.type;
+			
 
-				if($scope.user == 'admin' && $scope.password == 'admin' && $scope.type == 'V' ){					
-					window.location.hash= '#!/timeline';
-					$location.path('/timeline');
+			if($scope.user == 'synergy' && $scope.password == 'synergy123' && $scope.type == 'V' ){
+					$http.post("https://prueba-admision-web.herokuapp.com/session",{
+					username:$scope.user,	
+					password:$scope.password,
+					type:$scope.type})
+   .then(
+       function(response){
+         // success callback
+         		var data = response.data;
+         		var cookie = response.data.cid;        		
+    			
+    			if(data.status == "ok"){
+    				
+
+    			$http.get("https://prueba-admision-web.herokuapp.com/data?cid=k6lj87hj8",{
+				id: 1,
+    			title: $scope.titulo,
+    			url: $scope.urls,
+    			thumbnailUrl:$scope.min })
+
+    				.then(function(response){
+    					$scope.synergy=[];
+    					var data = response.data;
+    					
+    					console.log(data);
+
+    				});
+
+    				   				
+    				console.log(cookie);
+
+    			}       
+       
+    });
+			window.location.hash= '#!/timeline';
+			$location.path('/timeline');
 
 			}else{
-					alert('Usuario no existe');
+					
+			alert("Error status: failed,cid: null, HTTP 401");
 				}
 		};
 
@@ -39,6 +75,8 @@ app.controller('loginEntrada', function($scope, $location) {
 		alert('"recuperar contraseña"');
 
 }
+
+
 
 
 

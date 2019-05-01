@@ -20,5 +20,8 @@
     "grunt": "^1.0.1",
     "grunt-contrib-connect": "^2.0.0",
     "grunt-contrib-watch": "^1.0.0"
+  },
+  "dependencies": {
+    "popper.js": "^1.15.0"
   }
 }
