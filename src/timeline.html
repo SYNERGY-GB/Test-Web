@@ -2,13 +2,35 @@
 
 <div ng-app="myApp" ng-controller="loginEntrada" >
 	
-Welcome User at timeline!!!<br>
+<h1>{{welcome}}<h1><br>
+<p ng-model="synergy">aaaa {{synergy}}</p>
+
+ <ul>
+          
+            <li ng-repeat="data in data">
+                  <h2>
+                       {{data.title}}
+                  </h2>
+
+                   <p>
+                       {{data.url}}
+                  </p>
+
+
+            </li>
+
+
+          
+
+        </ul>
+
+
 
  <!--<ul>
           
-            <li ng-repeat="synergy in synergy" ng-model="synergy">
+            <li ng-repeat="synergy in synergy">
                   <h2>
-                       {{titulo}}
+                       {{synergy}}
                   </h2>
 
                    <p>

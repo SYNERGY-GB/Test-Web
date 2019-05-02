@@ -19,7 +19,11 @@ app.config(function($routeProvider) {
 });
 
 app.controller('loginEntrada', function($scope,$location,$http) {
-				
+		$scope.welcome="Welcome User at timeline!!!";
+
+
+
+
 		$scope.entrar = function() {			
 			var user = $scope.user;
 			var password = $scope.password;			
@@ -47,7 +51,7 @@ app.controller('loginEntrada', function($scope,$location,$http) {
     			thumbnailUrl:$scope.min })
 
     				.then(function(response){
-    					$scope.synergy=[];
+    					$scope.synergy=response;
     					var data = response.data;
     					
     					console.log(data);
@@ -55,7 +59,7 @@ app.controller('loginEntrada', function($scope,$location,$http) {
     				});
 
     				   				
-    				console.log(cookie);
+    				//console.log(cookie);
 
     			}       
        
@@ -65,7 +69,7 @@ app.controller('loginEntrada', function($scope,$location,$http) {
 
 			}else{
 					
-			alert("Error status: failed,cid: null, HTTP 401");
+			//alert("Error status: failed,cid: null, HTTP 401");
 				}
 		};
 
@@ -76,10 +80,15 @@ app.controller('loginEntrada', function($scope,$location,$http) {
 
 }
 
+$scope.validar = function(){
+
+	if($scope.loginaccess.$valid){
+		$scope.loginok =true;
+	}
 
 
 
-
+}
 
 			
 	});
