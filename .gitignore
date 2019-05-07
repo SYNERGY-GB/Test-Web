@@ -13,3 +13,7 @@ filetest.html
 indexs.html
 controller_config_route.js
 angular-animate.min.js
+node_modules
+.idea
+package-lock.json
+
