@@ -1,0 +1,20 @@
+<body>
+<div class="container">
+<table class="table">
+    <thead id="borde" class="thead-dark">
+      <tr>
+        <th scope="col">Título</th>
+        <th scope="col">Url</th>
+        <th scope="col">ThumbnailUrl</th>
+      </tr>
+    </thead>
+    <tbody id="borde">
+      <tr *ngFor="let dato of datos">
+        <td id="llenado">{{dato.title}}</td>
+        <td id="llenado">{{dato.url}}</td>
+        <td id="llenado">{{dato.thumbnailUrl}}</td>
+    </tr>
+    </tbody>
+  </table>
+  </div>
+</body>

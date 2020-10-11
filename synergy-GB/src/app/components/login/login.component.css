@@ -1,0 +1,23 @@
+body{
+    background-image: url(/assets/images/background.jpg) ;
+    background-size: 100% 100%;
+    height: 700px;
+    margin: 0;
+}
+
+.formulario{
+    background: rgba(243, 243, 243, 0.5);
+}
+
+
+.palabra{
+    font-family: 'Kanit', sans-serif;
+    font-size: 90px;
+    color: rgb(5, 111, 189);
+    position: relative;
+    top: 90px;
+    left: 790px;
+   
+}
+
+

@@ -1,0 +1,95 @@
+<body>
+    <div class="container float-left pt-5"> 
+       
+        <div class="row justify-content pt-5 ">
+            <div class="col-md-5 formulario">
+                <form action="#" (ngSubmit)="modal()" >
+                    <div class="form-group">
+                        <h1 class="">Inicio de sesión</h1>
+                    </div>
+                    
+                   <div class="form-group text-right">
+                    <select id="seleccion" (change)="capturar()" [(ngModel)]="seleccion" name="seleccion" class="selectpicker"  title="Seleccione..">
+                      <option value="V">V</option>
+                      <option value="E">E</option>
+                      <option value="P">P</option>
+                    </select>
+           
+                   </div>
+                
+                    <div class="form-group pt-3">
+                        <input type="text" class="form-control" name="user" [(ngModel)]="user" placeholder="Usuario" >
+                    </div>
+
+                    <div class="form-group">
+                        <input type="password" class="form-control"  name="password" [(ngModel)]="password"placeholder="Contraseña" >
+                    </div>
+                    
+                    <div>
+                        <p (click)="AlertPass()">¿Olvidó su contraseña?</p>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-secondary">Aceptar</button>
+                    </div>
+                </form>
+
+                <div  class="modal fade" id="editar2" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label" aria-hidden="true">
+                  <div class="modal-dialog modal-xs" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModal3Label"><i class="fas fa-exclamation-circle"></i> No puede estar vacio</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body modal-xs">
+                        <div class="container col-md-9 col-sm-6">
+                              <p>Seleccione las opciones</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                       
+                <div  class="modal fade" id="editar" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label" aria-hidden="true">
+                    <div class="modal-dialog modal-xs" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModal3Label"><i class="fas fa-exclamation-circle"></i> No puede estar vacio</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body modal-xs">
+                          <div class="container col-md-9 col-sm-6">
+                                <p>Coloque su usuario</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal fade" id="editar1" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label" aria-hidden="true">
+                    <div class="modal-dialog modal-xs" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModal3Label"><i class="fas fa-exclamation-circle"></i> No puede estar vacio</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body modal-xs">
+                          <div class="container col-md-9 col-sm-6">
+                            <p>coloque su password</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <div class="in-flex">
+        <p class="palabra">SYNERGY-GB</p>
+    </div>
+</body>
